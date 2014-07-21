@@ -1,0 +1,40 @@
+<!-- <div class="row">
+  <div class="col-xs-12">
+    <p class="lead">
+      Stay tuned for <strong>more speakers</strong> and <strong>more surprises</strong>!
+    </p>
+  </div>
+</div> -->
+<div class="row">
+  <% data.speakers.each do |speaker| %>
+    <%= partial 'partials/speaker', :locals => { :speaker => speaker } %>
+  <% end %>
+</div>
+
+<div class="row">
+  <div class="col-xs-12">
+    <div class="page-header">
+      <h1>Guests of Honor</h1>
+    </div>
+    <p class="lead">Are you ready to meet &amp; hang with our special guests?</p>
+
+    <% data.guests.each do |speaker| %>
+      <%= partial 'partials/speaker', :locals => { :speaker => speaker, :is_guest => true } %>
+    <% end %>
+
+  </div>
+</div>
+<div class="row share-wisdom">
+  <!--
+  <div class="col-xs-12">
+    <h3>&bullet; &bullet; &bullet;</h3>
+    <h3>Want to share your wisdom?</h3>
+    <p>
+      If you want to be part of the <b>fun</b> and give a talk, <a href="<%= data.global.event.cfp %>">submit your presentation</a> now.
+    </p>
+    <p>
+      <a class="btn btn-primary btn-lg" target="_self" href="<%= data.global.event.cfp %>">Submit your Presentation</a>
+    </p>
+  </div>
+  -->
+</div>

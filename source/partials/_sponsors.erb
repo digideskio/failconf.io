@@ -1,0 +1,13 @@
+<% data.sponsors.each do |type, sponsors| %>
+  <% if sponsors %>
+  <h3><%= type %></h3>
+  <div class="col-xs-12 sponsor-list">
+    <% sponsors.each do |sponsor| %>
+    <a href="<%= sponsor.url %>">
+      <%= image_tag "sponsors/#{sponsor.logo}", alt: sponsor.name, title: sponsor.name %>
+    </a>
+    <% end %>
+  </div>
+  <h3 class="seperator">&bullet; &bullet; &bullet;</h3>
+  <% end %>
+<% end %>

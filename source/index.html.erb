@@ -1,0 +1,112 @@
+---
+styles:
+  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+  - //netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css
+
+scripts:
+  - //cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js
+  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
+  - //cdnjs.cloudflare.com/ajax/libs/retina.js/1.0.1/retina.min.js
+  - //cdn.rawgit.com/markdalgleish/stellar.js/master/jquery.stellar.min.js
+---
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#home">Home</a>
+        </li>
+        <% data.pages.each do |page| %>
+        <%
+          title = page.keys[0]
+          subtext = page[title]
+        %>
+        <li><a href="#<%= title.to_url %>" title="<%= subtext %>"><%= title.split("_").join(" ") %></a></li>
+        <% end %>
+        <li class="social">
+          <a href="http://twitter.com/<%= data.global.social.twitter %>">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <% if data.global.social.facebook %>
+        <li>
+          <a href="https://www.facebook.com/<%= data.global.social.facebook %>">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <% end %>
+        <li>
+          <a href="mailto:<%= data.global.contact.mail %>?subject=<%= data.global.contact.title %> website">
+            <i class="fa fa-envelope"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div class="navbar-placeholder"></div>
+
+<header id="home" data-stellar-background-ratio="0.5">
+<%= partial "partials/header" %>
+</header>
+
+<% data.pages.each do |page| %>
+<%
+  title = page.keys[0]
+  subtext = page[title]
+%>
+<% id = title.to_url %>
+<div id="<%= id %>" class="block">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <div class="page-header">
+          <h1>
+            <%= title.split("_").join(" ") %>
+            <% if subtext %>
+            <small><%= subtext %></small>
+            <% end %>
+          </h1>
+          <% if data.global.debug %>
+          <a href="<%= api id %>" target="_self"><span class="label label-info">JSON API</span></a>
+          <% end %>
+        </div>
+        <% if File.exists?("source/partials/_#{id}.erb") %>
+          <%= partial "partials/#{id}" %>
+        <% else %>
+          <div class="alert alert-warning">
+            <i class="fa fa-warning"></i>&nbsp;
+            <strong>Warning:</strong> Partial <strong><%= id %></strong> does not exists.
+            Create the file <code>/source/partials/_<%= id %>.erb</code>
+            If you don't want this section, delete it from <code>/data/pages.yml</code> file.
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+
+<footer id="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <a href="http://webbox.io"><%= image_tag 'webbox-logo.png' %></a>
+        <p>
+          <span><a href="http://webbox.io"><i class="fa fa-home"></i></a></span>
+          <span><a href="http://twitter.com/webboxio"><i class="fa fa-twitter"></i></a></span>
+          <span><a href="mailto:hello@webbox.io?subject=jsist.org"><i class="fa fa-envelope-o"></i></a></span>
+          <span>&copy; 2014</span>
+        </p>
+    </div>
+    </div>
+  </div>
+</footer>

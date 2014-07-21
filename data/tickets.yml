@@ -1,0 +1,23 @@
+- name: Exclusive
+  price: 330
+  description: |
+    Includes **breakfast** , **lunch** and **hot/cold beverages** for two days,
+    also includes **after-party** dinner with guest speakers following the conference.
+
+    Dinner includes, Turkish style mezze plate, starters, grilled fish as main course + drinks at [Refik Restaurant][1] at
+    Asmalı Mescit / Taksim.
+
+    [1]: http://www.refikrestaurant.com
+
+- name: Standard
+  price: 220
+  description:
+    Includes **breakfast** , **lunch** and **hot/cold beverages** for two days.
+
+- name: Early Bird
+  price: 170
+  description:
+    Includes **breakfast** , **lunch** and **hot/cold beverages** for two days.
+
+
+    **_Expires on 16 July! Hurry up!_**

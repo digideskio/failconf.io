@@ -1,0 +1,26 @@
+<div class="bio <%= "guest" if defined? is_guest %> col-xs-12 col-md-6 col-lg-<% if defined? is_guest  %>4<% else %>3<% end %>">
+  <span class="rounded-image">
+    <%= image_tag "speakers/#{speaker.name.to_url}.jpg" %>
+  </span>
+  <h3><%= speaker.name %></h3>
+  <h4><a href="<%= speaker.work.company.link %>"><%= speaker.work.company.name %></a></h4>
+  <div class="social">
+    <% speaker.social.each do |key, address| %>
+    <a href="<%= address %>"><i class="fa fa-<%= key %>"></i></a>
+    <% end %>
+    <a href="#" data-toggle="modal" data-target="#speaker-modal-<%= "guest" if defined? is_guest %><%= speaker.id %>"><i class="fa fa-info-circle"></i></a>
+  </div>
+</div>
+<div class="modal" id="speaker-modal-<%= "guest" if defined? is_guest %><%= speaker.id %>" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title"><strong><%= speaker.name %></strong></h4>
+      </div>
+      <div class="modal-body">
+        <%= markdown speaker.bio %>
+      </div>
+    </div>
+  </div>
+</div>

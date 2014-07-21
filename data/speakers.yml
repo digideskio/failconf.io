@@ -1,0 +1,13 @@
+# - id: 1
+#   name: Mathias Bynens
+#   work:
+#     company:
+#       name: Opera Software
+#       link: http://opera.com
+#
+#   bio: |
+#     Web developer from Belgium. He likes HTML,
+#     CSS, JavaScript, Unicode, performance, and security.
+#   social:
+#     twitter: http://twitter.com/mathias
+#     github: http://github.com/mathiasbynens

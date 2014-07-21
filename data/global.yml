@@ -1,0 +1,22 @@
+title: jsist
+date: 11.10.2014
+
+contact:
+  title: jsist
+  mail: social@jsist.org
+
+social:
+  twitter: jsistorg
+  facebook: jsistorg
+
+event:
+  eventbrite: http://jsist.eventbrite.com
+  lanyrd: http://lanyrd.com/2014/jsist
+  cfp: https://docs.google.com/forms/d/1OQ3QpmEwa3-SnsijRN5ayezZfsk7Yy3Eg78sKjeDf1c/viewform
+
+meta:
+  description: "JavaScript Development Conference, September 27-28, Istanbul"
+  keywords: "js,javascript,front-end,angular,backbone,performance,webcomponents,istanbul,webbox,conference,conf"
+
+debug: false
+ga: UA-51139778-1

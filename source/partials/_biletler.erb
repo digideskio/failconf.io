@@ -1,0 +1,30 @@
+<div class="row">
+  <% data.tickets.each do |ticket| %>
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="ticket ticket-<%= ticket.name.to_url %> ">
+      <i class="fa fa-ticket"></i>
+      <h2><%= ticket.name %></h2>
+      <h3><i class="fa fa-try"></i> <%= ticket.price %></h3>
+      <h4>(<i class="fa fa-eur"></i> <%= (ticket.price / 2.91).ceil %>)</h4>
+      <a class="btn btn-default hidden-md hidden-sm hidden-xs" data-toggle="modal" data-target="#buy-tickets" href="<%= data.global.event.eventbrite %>">Buy Now!</a>
+      <a class="btn btn-default hidden-lg" href="<%= data.global.event.eventbrite %>">Buy Now!</a>
+      <h3 class="seperator">&bullet; &bullet; &bullet;</h3>
+      <%= markdown ticket.description %>
+    </div>
+  </div>
+  <% end %>
+</div>
+<div class="modal fade" id="buy-tickets" tabindex="-1" role="dialog" aria-labelledby="" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Buy Tickets</h4>
+      </div>
+      <div class="modal-body">
+        <div style="width:100%; text-align:left;" ><iframe  src="//eventbrite.com/tickets-external?eid=11678419467&ref=etckt" frameborder="0" height="350" width="100%" vspace="0" hspace="0" marginheight="5" marginwidth="5" scrolling="auto" allowtransparency="true"></iframe><div style="font-family:Helvetica, Arial; font-size:10px; padding:5px 0 5px; margin:2px; width:100%; text-align:left;" ><a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com/r/etckt">Event Registration Online</a><span style="color:#ddd;"> for </span><a style="color:#ddd; text-decoration:none;" target="_blank" href="https://jsist.eventbrite.com/?ref=etckt">JSIst: Istanbul JavaScript Conference</a> <span style="color:#ddd;">powered by</span> <a style="color:#ddd; text-decoration:none;" target="_blank" href="http://www.eventbrite.com?ref=etckt">Eventbrite</a></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+

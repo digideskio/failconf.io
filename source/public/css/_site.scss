@@ -1,0 +1,290 @@
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans:400,700|Open+Sans:300italic,400italic,600italic,700italic,400,300,600,700&subset=latin,latin-ext);
+
+a {
+  color: #c0c0c0;
+  &:hover {
+    color: #aaa;
+  }
+}
+
+.navbar {
+  background-color: #EF0000;
+  border: none;
+  .nav li a {
+    color: #fff;
+    &:active {
+      background-color: #DCDCDC;
+    }
+  }
+}
+
+body {
+  text-align: center;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  .bio {
+    margin: 25px 0 25px;
+    text-align: center;
+    .social {
+      font-size: 20px;
+      i {
+        margin: 0 5px;
+      }
+    }
+    .modal {
+      text-align: left;
+    }
+    .rounded-image {
+      display: block;
+      img {
+        border: 5px solid #EF0000;
+        width: 200px;
+      }
+    }
+    &.guest {
+      .rounded-image {
+        img {
+          border: 5px solid lighten(#EF0000, 20);
+        }
+      }
+    }
+  }
+
+  header {
+    overflow-x: hidden;
+    text-align: center;
+    background-image: url(/public/images/header.png);
+    background-position: center center;
+    background-repeat: repeat-x;
+    .jumbotron {
+      padding-top: 0;
+      margin-top: -10px;
+    }
+    img {
+      max-width: 100%;
+    }
+    h3 {
+      color: #EF0000;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .jumbotron {
+      background-color: transparent;
+      box-sizing: border-box;
+      .twitter {
+        font-size: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #55ACEE;
+        display: inline-block;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+    }
+  }
+
+  footer {
+    padding: 50px 0;
+    background-color: #234d98;
+    text-align: center;
+    color: #fff;
+    a {
+      color: inherit;
+    }
+    img {
+      display: block;
+      margin: 0px auto 20px auto;
+    }
+    span {
+      margin: 0 10px;
+    }
+  }
+
+  span.rounded-image {
+    img {
+      border-radius: 10px;
+    }
+  }
+}
+
+.navbar-placeholder {
+  height: 50px;
+}
+
+#bize-katilin {
+  padding-bottom: 40px;
+  .lead {
+    line-height: 1.8;
+  }
+}
+
+.share-wisdom {
+  margin: 50px 0 50px;
+  text-align: center;
+  a.btn {
+    margin-top: 40px;
+  }
+}
+
+#konusmacilar {
+  background-color: #f5f5f5;
+  .page-header {
+    border-bottom-color: #ffffff;
+  }
+}
+
+#konferans-alani {
+  background-color: #f0f0f0;
+  padding-bottom: 50px;
+}
+
+#code-of-conduct {
+  opacity: 0.7;
+  padding-bottom: 50px;
+  text-align: left;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  h3 {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+
+#sponsorlar {
+  text-align: center;
+
+  h3 {
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  .sponsor-list {
+    a {
+      display: inline-block;
+      box-sizing: border-box;
+      img {
+        margin: 20px 20px;
+        max-width: 80%;
+      }
+    }
+    & + .seperator {
+      margin-bottom: 70px;
+      padding-top: 30px;
+      opacity: 0.5;
+      clear: both;
+    }
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  small {
+    display: block;
+    margin-top: 10px;
+  }
+}
+
+#google-map {
+  height: 500px;
+  margin-bottom: 50px;
+}
+
+#team {
+  margin-bottom: 10px;
+  .team-member {
+    font-size: 14px;
+    img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 10px solid #fdff00;
+      margin-bottom: 5px;
+    }
+    margin-bottom: 30px;
+  }
+}
+
+#biletler {
+  .ticket {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    .seperator {
+      color: #222;
+      font-size: 24px;
+      opacity: 0.5;
+    }
+    > i.fa {
+      font-size: 8em;
+      margin: 20px auto;
+      display: block;
+    }
+    h2 {
+      color: inherit;
+      font-weight: 200;
+      font-size: 1.2em;
+      margin: 0 0 20px 0;
+    }
+    h3 {
+      font-weight: 200;
+      margin: 0 0 20px 0;
+    }
+    h4 {
+      margin: 0 0 20px 0;
+    }
+    a {
+      border: 0;
+      border-radius: 0;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 0.8em;
+      line-height: 1.7em;
+      opacity: 0.8;
+      color: #222;
+    }
+    a.btn {
+      &:hover {
+        opacity: 0.5;
+      }
+      color: #fff;
+    }
+
+    &.ticket-exclusive {
+      color: #cc0000;
+      a.btn {
+        background-color: #cc0000;
+      }
+    }
+
+    &.ticket-standard {
+      color: #006700;
+      a.btn {
+        background-color: #006700;
+      }
+    }
+
+    &.ticket-early-bird {
+      color: #234d98;
+      a.btn {
+        background-color: #234d98;
+      }
+    }
+
+  }
+}
+
+@media (min-width: 768px){
+    .navbar-nav{
+        float:none;
+        margin: 0 auto;
+        display: table;
+        table-layout: fixed;
+    }
+}
