@@ -1,0 +1,18 @@
+<div class="row">
+  <% data.team.each do |member| %>
+  <div class="col-xs-6 col-md-2 team-member">
+    <% if member.twitter %>
+      <a href="http://twitter.com/<%= member.twitter %>" class="team-member">
+        <img src="<%= member.image %>" alt="@<%= member.twitter %>">
+        <div>@<%= member.twitter %></div>
+      </a>
+    <% end %>
+    <% if member.linkedin %>
+      <a href="http://linkedin.com/in/<%= member.linkedin %>" class="team-member">
+        <img src="<%= member.image %>" alt="@<%= member.linkedin %>">
+        <div>@<%= member.linkedin %></div>
+      </a>
+    <% end %>
+  </div>
+  <% end %>
+</div>
