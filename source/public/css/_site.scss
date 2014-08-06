@@ -202,6 +202,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #ekip {
   margin-bottom: 10px;
+  .row {
+    display: table;
+    margin: 0 auto;
+  }
   .team-member {
     font-size: 14px;
     img {
@@ -212,6 +216,7 @@ h1, h2, h3, h4, h5, h6 {
       margin-bottom: 5px;
     }
     margin-bottom: 30px;
+    display: inline-table;
   }
 }
 
