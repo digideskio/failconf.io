@@ -220,6 +220,28 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media only screen 
+and (max-width : 320px) {
+  #ekip {
+    .row {
+      display: block;
+      margin: auto;
+      .team-member {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media only screen
+and (max-width: 992px) {
+  #footer {
+    .org {
+      margin-bottom: 30px;
+    }
+  }
+}
+
 #biletler {
   .ticket {
     padding: 20px;
