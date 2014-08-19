@@ -55,10 +55,10 @@
       link: http://sehir.edu.tr
   bio: İstanbul Şehir Üniversitesi Teknoloji Transfer Ofisi Direktörü
 
-- id: 4
-  name: Mehmet Alpatlı
-  work:
-    company:
-      name: Şehir Üniversitesi
-      link: http://sehir.edu.tr
-  bio: İstanbul Şehir Üniversitesi Kuluçka Merkezi Müdürü
+# - id: 4
+#   name: Mehmet Alpatlı
+#   work:
+#     company:
+#       name: Şehir Üniversitesi
+#       link: http://sehir.edu.tr
+#   bio: İstanbul Şehir Üniversitesi Kuluçka Merkezi Müdürü
