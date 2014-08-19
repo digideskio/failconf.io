@@ -1,12 +1,14 @@
-<div class="bio <%= "guest" if defined? is_guest %> col-xs-12 col-md-6 col-lg-<% if defined? is_guest  %>4<% else %>3<% end %>">
+<div class="bio col-xs-12 col-md-6 col-lg-4">
   <span class="rounded-image">
     <%= image_tag "speakers/#{speaker.name.to_url}.jpg" %>
   </span>
   <h3><%= speaker.name %></h3>
   <h4><a href="<%= speaker.work.company.link %>"><%= speaker.work.company.name %></a></h4>
   <div class="social">
-    <% speaker.social.each do |key, address| %>
-    <a href="<%= address %>"><i class="fa fa-<%= key %>"></i></a>
+    <% if speaker.social %>
+      <% speaker.social.each do |key, address| %>
+      <a href="<%= address %>"><i class="fa fa-<%= key %>"></i></a>
+      <% end %>
     <% end %>
     <a href="#" data-toggle="modal" data-target="#speaker-modal-<%= "guest" if defined? is_guest %><%= speaker.id %>"><i class="fa fa-info-circle"></i></a>
   </div>

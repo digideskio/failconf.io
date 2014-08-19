@@ -1,13 +1,64 @@
-# - id: 1
-#   name: Mathias Bynens
-#   work:
-#     company:
-#       name: Opera Software
-#       link: http://opera.com
-#
-#   bio: |
-#     Web developer from Belgium. He likes HTML,
-#     CSS, JavaScript, Unicode, performance, and security.
-#   social:
-#     twitter: http://twitter.com/mathias
-#     github: http://github.com/mathiasbynens
+- id: 1
+  name: Umut Gökçen Yılmaz
+  work:
+    company:
+      name: Nomad Commerce
+      link: http://nomadcommerce.com
+
+  bio: |
+    Nomad Commerce Kurucu Ortağı ve Teknik Müdürü.
+    Kariyerine 20 yaşında henüz Yıldız Teknik Üniversitesinde öğrenci iken gömülü
+    sistemlerdeki girişimi ile başladı. Yıllar sonra Tradesoft, Nokia, Microsoft,
+    Mobilike, Intel, IBM ve diğer birçok lokal Türk firması ile yaptığı çalışmalar
+    sonucunda elde ettiği yazılım geliştirme, yönetim, danışmanlık ve iş geliştirme’deki
+    10 yıllık profesyonel tecrübeden yararlanarak Nomad’i kurdu. Tecrübeli bir
+    Android uygulama geliştiricisi, yazılım uzmanı ve eğitmeni olmanın dışında,
+    Umut bir teknoloji “geek” olarak bilinir.
+
+- id: 5
+  name: Onur Cem Gökmen
+  work:
+    company:
+      name: Nomad Commerce
+      link: http://nomadcommerce.com
+  bio: |
+    Türkiye'nin
+      - ilk e-ticaret sitelerinden (remzi, varlık internet kitabevleri) (1994)
+      - ilk yatırım holdingine satılan teknoloji/internet şirketlerinden (Digilane/İLAB holding) (1999)
+      - ilk do-it-yourself e-ticaret altyapısı Diginity (Garanti Bankası Alışveriş/ Doğuş Holding , Kobiline / Koç Holding) (2000)
+      - ilk b2b sektörel marketplaceler (steelorbis, chemorbis /ILAB) (2002)
+      - ilk digital denetleme yapabilen IT Audit Departmanı bir Türk Şirketinde (sarbanes - oxley guidelines / Grant Thornton Türkiye) (2005)
+      - ilk 3G ihalesi ve mobil internet (Lucent Technologies Türkiye - Telsim) (2007)
+
+
+- id: 2
+  name: Volkan Biçer
+  work:
+    company:
+      name: Mobilike
+      link: http://mobilike.com
+  bio: |
+    1984 İstanbul doğumlu olan Volkan Biçer, Boğaziçi Üniversitesi’nde Yönetim Bilişim
+    Sistemleri bölümünde lisans eğitimini aldıktan sonra Galatasaray Üniversitesi’nde
+    MBA eğitimini tamamladı. Türkiye’nin lider mobil operatörü Turkcell’in Mobil
+    Pazarlama & Reklam Departmanı’nda Ürün Yöneticisi ve Yahoo! EMEA ekibinde Ülke
+    İçerik Yöneticisi olarak çalışan Biçer, aynı zamanda Yahoo! EMEA Pazarlama Ekibinde
+    Hedef Kitle & Topluluk Yöneticisi görevlerini yürüttü. 2009'da Türkiye'nin lider
+    mobil reklam ağı mobilike'ı kurdu, şirketin Kurucu Ortağı ve Genel Müdürü olarak
+    görevini sürdürmekte.
+
+- id: 3
+  name: Önder Mutlu Yılmaz
+  work:
+    company:
+      name: Şehir Üniversitesi
+      link: http://sehir.edu.tr
+  bio: İstanbul Şehir Üniversitesi Teknoloji Transfer Ofisi Direktörü
+
+- id: 4
+  name: Mehmet Alpatlı
+  work:
+    company:
+      name: Şehir Üniversitesi
+      link: http://sehir.edu.tr
+  bio: İstanbul Şehir Üniversitesi Kuluçka Merkezi Müdürü
