@@ -1,0 +1,13 @@
+<div class="row">
+  <% data.projects.each do |project| %>
+  <div class="project col-xs-12 col-md-3">
+    <span><%= project.name %></span>
+  </div>
+  <% end %>
+  <div class="col-xs-12">
+    <p style="padding-top: 20px; padding-bottom: 30px;">
+      <a href="<%= data.global.event.cfp %>" class="btn btn-lg btn-link">Geç kalmadınız, hala başvurmak için şansınız var.</a>
+      <br><strong>22 Ağustos Cuma</strong> günü, saat <strong>18.00</strong>'a kadar başvurular devam edecektir.
+    </p>
+  </div>
+</div>

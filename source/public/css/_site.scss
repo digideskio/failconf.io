@@ -220,7 +220,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-@media only screen 
+@media only screen
 and (max-width : 320px) {
   #ekip {
     .row {
@@ -310,6 +310,37 @@ and (max-width: 992px) {
       }
     }
 
+  }
+}
+
+#projeler {
+  background-color: #fafafa;
+  .project {
+    height: 100px;
+    line-height: 100px;
+    font-size: 22px;
+    color: #cc0000;
+    span {
+      background-color: #f5f5f5;
+      display: inline-block;
+      line-height: 1em;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  }
+}
+
+#etkinlik-takvimi {
+  text-align: left;
+  font-size: 15px;
+  h4 {
+    text-align: left;
+  }
+  .calendar-item {
+    min-height: 50px;
+    &.break {
+      opacity: 0.5;
+    }
   }
 }
 

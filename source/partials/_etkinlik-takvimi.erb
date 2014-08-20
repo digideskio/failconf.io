@@ -1,0 +1,29 @@
+
+<% data.calendar.tracks.each do |talk| %>
+<div class="row <%= talk.type %> calendar-item">
+  <div class="col-xs-12 col-md-5">
+    <div class="row">
+      <div class="col-xs-12 col-md-4">
+        <time>
+          <%= data.calendar.times[data.calendar.tracks.index talk].start %> -
+          <%= data.calendar.times[data.calendar.tracks.index talk].end %>
+        </time>
+      </div>
+      <div class="col-xs-12 col-md-8">
+        <% if talk.type == 'break' %>
+        <strong>
+          <i class="fa fa-<%= talk.icon %>"></i>
+          <%= talk.description %>
+        </strong>
+        <% else %>
+          <strong><%= talk.speaker %></strong>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-xs-12 col-md-7">
+    <%= talk.talk %>
+  </div>
+</div>
+<% end %>
