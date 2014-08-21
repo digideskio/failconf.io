@@ -29,6 +29,9 @@ body {
   font-family: "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 18px;
   line-height: 1.5;
+  .modal-body {
+    text-align: left;
+  }
   .bio {
     margin: 25px 0 25px;
     text-align: center;
@@ -37,9 +40,6 @@ body {
       i {
         margin: 0 5px;
       }
-    }
-    .modal {
-      text-align: left;
     }
     .rounded-image {
       display: block;

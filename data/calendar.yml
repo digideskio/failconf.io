@@ -6,10 +6,7 @@ times:
     end: "10:40"
 
   - start: "11:00"
-    end: "11:30"
-
-  - start: "11:30"
-    end: "12:00"
+    end: "11:40"
 
   - start: "12:00"
     end: "13:30"
@@ -38,10 +35,6 @@ tracks:
   - type: talk
     speaker: Onur Cem Gökmen
     talk: İlkler, avantajlar, dezavantajlar
-
-  - type: talk
-    speaker: Volkan Biçer
-    talk: <i>Açıklanacak</i>
 
   - type: break
     description: Öğle Yemeği
