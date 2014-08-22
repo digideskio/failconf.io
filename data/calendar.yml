@@ -30,7 +30,7 @@ tracks:
 
   - type: talk
     speaker: Burak Yaman
-    talk: <i>Açıklanacak</i>
+    talk: Çabuk Başarısız Olmak
 
   - type: talk
     speaker: Onur Cem Gökmen
@@ -42,7 +42,7 @@ tracks:
 
   - type: talk
     speaker: Önder Mutlu Yılmaz
-    talk: <i>Açıklanacak</i>
+    talk: Best Failure Logs
 
   - type: talk
     speaker: Umut Gökçen Yılmaz
@@ -56,7 +56,6 @@ tracks:
       Rengorenk Guide,
       Contafe,
       Kenditarzim.com,
-      Democratus,
       Edurel,
       Blokick.com
 
