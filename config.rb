@@ -1,4 +1,3 @@
-require './credentials'
 require 'stringex'
 require 'time'
 
@@ -37,8 +36,5 @@ end
 
 activate :deploy do |deploy|
   deploy.build_before = true
-  deploy.method   = :rsync
-  deploy.user     = DEPLOY_USER
-  deploy.host     = DEPLOY_HOST
-  deploy.path     = DEPLOY_PATH
+  deploy.method   = :git
 end

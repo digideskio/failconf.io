@@ -14,11 +14,11 @@ end
 desc "Deploy"
 task :deploy do
   system "middleman deploy"
-  users = ["fka", "vigmasts", "vigorotti"]
-  message = "failconf deployed"
-  users.each do |user|
-    HTTParty.post("http://yofor.me/#{user}/#{URI.escape message}")
-  end
+  # users = ["fka", "vigmasts", "vigorotti"]
+  # message = "failconf deployed"
+  # users.each do |user|
+  #   HTTParty.post("http://yofor.me/#{user}/#{URI.escape message}")
+  # end
 end
 
 desc "Generate Page"
